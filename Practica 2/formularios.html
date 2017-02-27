@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+</head>
+	<body>
+		<table>
+		<tr height="200px"> 
+		<td width="500px" height="400px" rowspan="3">
+			<form>
+				<fieldset>
+					<legend>Datos Personales</legend>
+					<table>
+					<tr><td height="11px"></td></tr>
+					<tr><td>Nombre:</td> <td><input type="text" name="nombre"></td><tr>
+					<tr><td height="10px"></td></tr>
+					<tr><td>Apellido:</td><td> <input type="text" name="apellido"></td></tr>
+					<tr><td height="10px"></td></tr>
+					<tr><td>Dirección:</td><td> <input type="text" name="direccion" size="50"></td></tr>
+					<tr><td height="10px"></td></tr>
+					<tr><td>Codigo postal:</td><td> <input type="text" name="cp" size= "5"></td></tr>
+					<tr><td height="10px"></td></tr>
+					<tr><td>Ciudad:</td><td> <input type="text" name="ciudad"></td></tr>
+					<tr><td height="10px"></td></tr>
+					<tr><td>Telefono: </td><td><input type="text" name="telefono" size="10"></td></tr>
+					<tr><td height="10px"></td></tr>
+					<tr><td>Estado Civil </td><td><select> 
+										<option value="1">Soltero/a</option>
+										<option value="2">Casado/a</option>
+										<option value="3">Viudo/a</option>
+									</select>
+					</td></tr>
+					<tr><td height="11px"></td></tr>
+					</table>	
+				</fieldset>
+			</form>
+		</td>
+		<td width="200px">
+			<form>
+				<fieldset>	
+					<legend>Formacion académica</legend>
+					<p><input type="radio" name="secundaria">Secundaria</p>
+					<p><input type="radio" name="bachillerato">Bachillerato</p>
+					<p><input type="radio" name="TiUn">Título Universitario</p>
+				</fieldset>
+			</form>
+		</td>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<fieldset>
+						<legend>Áreas de interés</legend>
+						<p><input type="checkbox" name="programacion">Programación</p>
+						<p><input type="checkbox" name="bd">Bases de Datos</p>
+						<p><input type="checkbox" name="redes">Redes</p>
+					</fieldset>
+				</form>
+			</td>
+		</tr>
+		<tr><td></td></tr>
+
+		<tr><td>
+			<form>
+			<fieldset>
+				<legend>Idiomas</legend>
+				<table>
+					<tr><td height="10px"></td></tr>
+					<tr><td><input type="text"></td>
+						<td><select><option selected="selected">Seleccionar</option>
+									<option>Inglés</option>
+									<option>Español</option>
+									<option>Francés</option>
+									<option>Alemán</option></select></td>
+					</tr>
+					<td width="50px"></td>
+				</table>
+
+			</fieldset>
+			</form>
+		</td></tr>
+	
+
+
+
+		</table>
+	</body>
+</html>
