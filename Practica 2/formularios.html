@@ -15,19 +15,19 @@
 					<legend>Datos Personales</legend>
 					<table>
 					<tr><td height="11px"></td></tr>
-					<tr><td width="80px">Nombre:</td> <td><input type="text" name="nombre"></td><tr>
+					<tr><td width="80px">Nombre:</td> <td><input type="text" id="nombre"></td><tr>
 					<tr><td height="12px"></td></tr>
-					<tr><td width="80px">Apellido:</td><td> <input type="text" name="apellido"></td></tr>
+					<tr><td width="80px">Apellido:</td><td> <input type="text" id="apellido"></td></tr>
 					<tr><td height="12px"></td></tr>
-					<tr><td width="80px">Dirección:</td><td> <input type="text" name="direccion" size="45"></td></tr>
+					<tr><td width="80px">Dirección:</td><td> <input type="text" id="direccion" size="45"></td></tr>
 					<tr><td height="12px"></td></tr>
-					<tr><td width="80px">Codigo postal:</td><td> <input type="text" name="cp" size= "5"></td></tr>
+					<tr><td width="80px">Codigo postal:</td><td> <input type="text" id="cp" size= "5"></td></tr>
 					<tr><td height="12px"></td></tr>
-					<tr><td width="80px">Ciudad:</td><td> <input type="text" name="ciudad"></td></tr>
+					<tr><td width="80px">Ciudad:</td><td> <input type="text" id="ciudad"></td></tr>
 					<tr><td height="12px"></td></tr>
-					<tr><td width="80px">Telefono: </td><td><input type="text" name="telefono" size="10"></td></tr>
+					<tr><td width="80px">Telefono: </td><td><input type="text" id="telefono" size="10"></td></tr>
 					<tr><td height="12px"></td></tr>
-					<tr><td width="80px">Estado Civil </td><td><select> 
+					<tr><td width="80px">Estado Civil </td><td><select id="es"> 
 										<option value="1">Soltero/a</option>
 										<option value="2">Casado/a</option>
 										<option value="3">Viudo/a</option>
@@ -42,9 +42,9 @@
 			<form>
 				<fieldset>	
 					<legend>Formacion académica</legend>
-					<p><input type="radio" name="secundaria">Secundaria</p>
-					<p><input type="radio" name="bachillerato">Bachillerato</p>
-					<p><input type="radio" name="TiUn">Título universitario</p>
+					<p><input type="radio" id="rdEscuela1">Secundaria</p>
+					<p><input type="radio" id="rdEscuela2">Bachillerato</p>
+					<p><input type="radio" id="rdEscuela3">Título universitario</p>
 				</fieldset>
 			</form>
 		</td>
@@ -54,9 +54,9 @@
 				<form>
 					<fieldset>
 						<legend>Áreas de interés</legend>
-						<p><input type="checkbox" name="programacion">Programación</p>
-						<p><input type="checkbox" name="bd">Bases de Datos</p>
-						<p><input type="checkbox" name="redes">Redes</p>
+						<p><input type="checkbox" id="area1">Programación</p>
+						<p><input type="checkbox" id="area2">Bases de Datos</p>
+						<p><input type="checkbox" id="area3">Redes</p>
 					</fieldset>
 				</form>
 			</td>
@@ -69,8 +69,8 @@
 				<legend>Idiomas</legend>
 				<table>
 					<tr><td height="5px"></td></tr>
-					<tr><td><input type="text"></td>
-						<td><select><option selected="selected">Seleccionar</option>
+					<tr><td><input type="text" id="id1"></td>
+						<td><select id="areas1"><option selected="selected" >Seleccionar</option>
 									<option>Inglés</option>
 									<option>Español</option>
 									<option>Francés</option>
@@ -78,8 +78,8 @@
 						<td width="50px"></td>
 					</tr>
 					<tr><td height="8px"></td></tr>
-					<tr><td><input type="text"></td>
-						<td><select><option selected="selected">Seleccionar</option>
+					<tr><td><input type="text" id="id2"></td>
+						<td><select id="areas2"><option selected="selected" >Seleccionar</option>
 									<option>Inglés</option>
 									<option>Español</option>
 									<option>Francés</option>
@@ -87,8 +87,8 @@
 						<td width="50px"></td>
 					</tr>
 					<tr><td height="8px"></td></tr>
-					<tr><td><input type="text"></td>
-						<td><select><option selected="selected">Seleccionar</option>
+					<tr><td><input type="text" id="id3"></td>
+						<td><select id="areas3"><option selected="selected">Seleccionar</option>
 									<option>Inglés</option>
 									<option>Español</option>
 									<option>Francés</option>
@@ -96,8 +96,8 @@
 						<td width="50px"></td>
 					</tr>
 					<tr><td height="8px"></td></tr>
-					<tr><td><input type="text"></td>
-						<td><select><option selected="selected">Seleccionar</option>
+					<tr><td><input type="text" id="id4"></td>
+						<td><select id="areas4"><option selected="selected">Seleccionar</option>
 									<option>Inglés</option>
 									<option>Español</option>
 									<option>Francés</option>
@@ -111,7 +111,7 @@
 		<td><form>
 			<fieldset>
 				<legend>Áreas de interés</legend>
-				<select multiple="multiple" size="9">
+				<select multiple="multiple" size="9" id="mul">
 					<option>Bases de Datos</option>
 					<option>Programacion</option>
 					<option>Redes</option>
@@ -125,7 +125,7 @@
 		<tr><td height="11px"></td></tr>
 		<tr><td colspan="2"><fieldset><table width="610px">
 			<tr><td colspan="3">Comentarios</td></tr>
-			<tr><td width="55px"></td><td><form><textarea cols="65"></textarea></form></td></tr>
+			<tr><td width="55px"></td><td><form><textarea id="comentarios" cols="65"></textarea></form></td></tr>
 			<tr><td height="15px"></td></tr>
 			</table>
 			</fieldset>
@@ -133,11 +133,12 @@
 		<tr><td colspan="2" height="20px"></td></tr>
 		<tr><td colspan="2">
 			<table>
-				<tr><td width="250px"></td><td><form><input type="submit" name="enviar" value="Enviar"></form></td>
-				<td><form><input type="submit" name="refresh" value="Restablecer"></form></td>
+				<tr><td width="250px"></td><td><form><input type="submit" id="enviar" value="Enviar"></form></td>
+				<td><form><input type="submit" id="restablecer" value="Restablecer"></form></td>
 				</tr>
 			</table>
 		</td></tr>
 		</table>
+	<script type="text/javascript" src="JS/cookie.js"></script>
 	</body>
 </html>
